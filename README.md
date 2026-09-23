@@ -25,20 +25,21 @@
    ```bash
    git clone [https://github.com/sondosghr/Laravel-contacts-app.git](https://github.com/sondosghr/Laravel-contacts-app.git)
    
-1- Install dependencies:
+2- Install dependencies:
 composer install
 
-2- Setup environment file:
+3- Setup environment file:
 cp .env.example .env
 php artisan key:generate
 
-3- Run migrations:
+ملاحظة: يجب إنشاء قاعدة البيانات محلياً وتعديل اسم قاعدة البيانات (DB_DATABASE) داخل ملف .env ليكون مطابقاً لها قبل تنفيذ الـ Migrations.
+4- Run migrations:
 php artisan migrate
 
-4-Start local server:
+5-Start local server:
 php artisan serve
 
-ملاحظة: بعد تشغيل السيرفر المحلي، افتح  المسار المباشر لصفحة جهات الاتصال في المتصفح:
+ملاحظة: بعد تشغيل السيرفر المحلي، افتح المسار المباشر لصفحة جهات الاتصال في المتصفح:
 
 http://127.0.0.1:8000/contacts/list
 
