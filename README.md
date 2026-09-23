@@ -33,6 +33,7 @@ cp .env.example .env
 php artisan key:generate
 
 ملاحظة: يجب إنشاء قاعدة البيانات محلياً وتعديل اسم قاعدة البيانات (DB_DATABASE) داخل ملف .env ليكون مطابقاً لها قبل تنفيذ الـ Migrations.
+
 4- Run migrations:
 php artisan migrate
 
